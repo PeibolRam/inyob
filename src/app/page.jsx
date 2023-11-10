@@ -5,48 +5,112 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import '../styles/page.css'
 
 function page() {
+
   return (
     <main>
       <section className='hero'>
-        <div className="content">
-          <Image className='psn-abs' src='/images/hero_vector.png' width={30} height={287} />
-          <h2>¿Buscas un trabajo que verdaderamente cumpla con tus expectativas y donde puedes empezar a trabajar en días y no semanas?</h2>
-          <p>En <span className='font-bold'>Inyob</span>, nuestro equipo y nuestra tecnología te ayudan a realizar tus aspiraciones y te abren puertas que ni siquiera sabías que estaban ahí.</p>
-
-          <p>En <span className='font-bold'>Inyob</span>, no sólo encontramos el trabajo adecuado para ti, <span className='font-bold'>te preparamos para brillar en él.</span></p>
-
-          <p className='font-bold'>¡Descubre más y transforma tu trayectoria con nosotros!</p>
-
-          <a className='btn' href="">¡Mejora tu vida con un click! <AiOutlineArrowRight /></a>
-        </div>
-
-        <div className="bg-vector">
-          <Image className='psn-abs-left' src='/images/vector-left.png' width={222} height={200} objectFit='cover' />
-          <Image className='hero-image' src='/images/hero-image.png' width={440} height={415} objectFit='contain' />
-          <Image className='psn-abs-right' src='/images/vector-right.png' width={200} height={220} />
+        <div className="content hero-container">
+          <div className='hero-content'>
+            <Image className='psn-abs' src='/images/hero_vector.png' width={30} height={287} />
+            <h2>¿Buscas un trabajo que verdaderamente cumpla con tus expectativas y donde puedes empezar a trabajar en días y no semanas?</h2>
+            <p>En <span className='font-bold'>Inyob</span>, nuestro equipo y nuestra tecnología te ayudan a realizar tus aspiraciones y te abren puertas que ni siquiera sabías que estaban ahí.</p>
+            <p>En <span className='font-bold'>Inyob</span>, no sólo encontramos el trabajo adecuado para ti, <span className='font-bold'>te preparamos para brillar en él.</span></p>
+            <p className='font-bold'>¡Descubre más y transforma tu trayectoria con nosotros!</p>
+            <a className='btn' href="">¡Mejora tu vida con un click! <AiOutlineArrowRight /></a>
+          </div>
+          <div className="bg-vector">
+            <Image className='psn-abs-left' src='/images/vector-left.png' width={222} height={200} objectFit='cover' />
+            <Image className='hero-image' src='/images/hero-image.png' width={440} height={415} objectFit='contain' />
+            <Image className='psn-abs-right' src='/images/vector-right.png' width={200} height={220} />
+          </div>
         </div>
       </section>
+
       <section className='find '>
-        <div className="content">
+        <div className="content find-container">
           <Image src='/images/profile_mob.png' width={365} height={400} />
-          <h1>¡Encuentra tu nuevo trabajo por <span className='font-bold'>whatsapp</span>!</h1>
-          <ul>
-            <li>✅ 100% confiable</li>
-            <li>✅ Asistencia personalizada</li>
-            <li>✅ Super fácil y rápido</li>
-          </ul>
+          <div className='find-content'>
+            <h1>¡Encuentra tu nuevo trabajo por <span className='font-bold'>whatsapp</span>!</h1>
+            <ul>
+              <li>✅ 100% confiable</li>
+              <li>✅ Asistencia personalizada</li>
+              <li>✅ Super fácil y rápido</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section className='how-works'>
         <div className="content">
           <h2>¿Cómo funciona?</h2>
+          <p>¡Con <span className="font-bold">Inyob</span> el proceso es múy fácil!</p>
 
+          <div className='how-works-carousel mobile'>
+            <div className='slider-how-works'>
+              <div className='slide-how-works'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+            </div>
+            <div className="slider-dots-how-works"></div>
+          </div>
+          <div className='desktop'>
+            <div className='grid-how-works'>
+              <div className='slide-how-works margin-1'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works margin-1'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works margin-1'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works margin-1'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works margin-1'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+              <div className='slide-how-works margin-1'>
+                <Image src='/images/profile_mob.png' width={110} height={150} />
+                <p>1. Inicia una conversación con Valeria, tu asistente personal de Inyob. Ella te ayudará a crear un perfil personalizado para encontrar el trabajo perfecto para ti.</p>
+              </div>
+            </div>
+          </div>
 
-          <a className='btn' href="">¡Comienza aquí!<AiOutlineArrowRight /></a>
-          <h3><span className='green-text'>Tu nuevo trabajo en cuestión de días</span> y no en semanas o meses de esfuerzo</h3>
-          <p>En <span className="font-bold">Inyob</span> tu desarrollo profesional se convierte en nuestra prioridad. En el mundo laboral actual, la capacitación y la red de contactos son esenciales para destacar y progresar.</p>
-          <p>En <span className="font-bold">Inyob</span> eres parte de una comunidad que valora y celebra tus logros.</p>
+          <div className='how-works-btn'>
+            <a className='btn' href="">¡Comienza aquí!<AiOutlineArrowRight /></a>
+          </div>
+          <div className='how-works-content'>
+            <h3><span className='green-text'>Tu nuevo trabajo en cuestión de días</span> y no en semanas o meses de esfuerzo</h3>
+            <p>En <span className="font-bold">Inyob</span> tu desarrollo profesional se convierte en nuestra prioridad. En el mundo laboral actual, la capacitación y la red de contactos son esenciales para destacar y progresar.</p>
+            <p>En <span className="font-bold">Inyob</span> eres parte de una comunidad que valora y celebra tus logros.</p>
+          </div>
         </div>
       </section>
 

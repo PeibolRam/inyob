@@ -16,7 +16,6 @@ main {
 .psn-abs {
   position: absolute;
   left: 0;
-  top: 10%;
 }
 
 .bg-vector {
@@ -49,6 +48,20 @@ main {
 
 }
 
+@media (min-width: 768px) {
+  .hero-container {
+    display: flex;
+  }
+
+  .psn-abs-left {
+    display: none;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+}
+
 .find {
   background: rgb(235, 248, 231);
   background: linear-gradient(180deg, rgba(235, 248, 231, 1) 0%, rgba(105, 208, 85, 1) 50%);
@@ -59,6 +72,16 @@ main {
 .find ul li {
   font-weight: 400;
   margin: 0.5em 0;
+}
+
+@media (min-width: 768px) {
+  .find-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+  }
+
 }
 
 .section-bg-green {
@@ -74,10 +97,18 @@ main {
 .slide-how-works {
   background-color: #fff;
   border-radius: 2em;
-  box-shadow: 0px 15px 24px 1px rgba(241, 250, 233, 0.75);
-  -webkit-box-shadow: 0px 15px 24px 1px rgba(241, 250, 233, 0.75);
-  -moz-box-shadow: 0px 15px 24px 1px rgba(241, 250, 233, 0.75);
+  box-shadow: 0px 5px 5px 0px rgba(110, 208, 79, 0.49);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(110, 208, 79, 0.49);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(110, 208, 79, 0.49);
   width: 100%;
+}
+
+.grid-how-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
 
 .podcast-how-works-slider-container {

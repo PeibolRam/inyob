@@ -55,6 +55,7 @@ h4 {
 .content {
   width: 80%;
   margin: 0 auto;
+  max-width: 1300px;
 }
 
 .font-bold {
@@ -98,7 +99,27 @@ h4 {
   text-align: right;
 }
 
+.desktop {
+  display: none;
+}
 
+.mobile {
+  display: block;
+}
+
+.margin-1 {
+  margin: 1em;
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
 
 /* Borrar en productivo */
 .proximamente {
