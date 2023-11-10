@@ -103,13 +103,15 @@ function page() {
             </div>
           </div>
 
-          <div className='how-works-btn'>
-            <a className='btn' href="">¡Comienza aquí!<AiOutlineArrowRight /></a>
-          </div>
-          <div className='how-works-content'>
-            <h3><span className='green-text'>Tu nuevo trabajo en cuestión de días</span> y no en semanas o meses de esfuerzo</h3>
-            <p>En <span className="font-bold">Inyob</span> tu desarrollo profesional se convierte en nuestra prioridad. En el mundo laboral actual, la capacitación y la red de contactos son esenciales para destacar y progresar.</p>
-            <p>En <span className="font-bold">Inyob</span> eres parte de una comunidad que valora y celebra tus logros.</p>
+          <div className='how-works-container'>
+            <div className='how-works-btn'>
+              <a className='btn' href="">¡Comienza aquí!<AiOutlineArrowRight /></a>
+            </div>
+            <div className='how-works-content'>
+              <h3><span className='green-text'>Tu nuevo trabajo en cuestión de días</span> y no en semanas o meses de esfuerzo</h3>
+              <p>En <span className="font-bold">Inyob</span> tu desarrollo profesional se convierte en nuestra prioridad. En el mundo laboral actual, la capacitación y la red de contactos son esenciales para destacar y progresar.</p>
+              <p>En <span className="font-bold">Inyob</span> eres parte de una comunidad que valora y celebra tus logros.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -117,28 +119,38 @@ function page() {
       <section className="why-join">
         <div className='content'>
           <h2>¿Por qué unirte a <span className='green-text'>nuestra red?</span></h2>
-          <Image src='/images/why1.png' width={350} height={135} />
+          <Image src='/images/why1.png' className='why-join-banner' fill={true} />
 
           <div className='align-left'>
             <h4 className='green-text'>Educación Continua</h4>
             <p>El mundo laboral está en constante cambio, y adaptarse es clave. Te ofrecemos acceso a materiales de capacitación y cursos en línea GRATIS, que te ayudaran a siempre estar un paso adelante.</p>
           </div>
-          <div className='align-right'>
+          <div className='align-left'>
             <h4 className='green-text'>Comunidad de Apoyo</h4>
             <p>Sabemos que compartir experiencias, tanto buenas como malas, es fundamental. En <span className="font-bold">Inyob</span>, podrás conocer opiniones sobre diferentes empleadores, lo que te permitirá tomar decisiones informadas.</p>
           </div>
-          <Image src='/images/why2.png' width={350} height={135} />
+
           <div className='align-left'>
             <h4 className='green-text'>Conexiones Valiosas</h4>
             <p>Una red de contactos sólida puede marcar la diferencia en tu carrera. Aquí, podrás conectar con colegas y profesionales de tu sector, ampliando tu red de contactos.</p>
           </div>
-          <a className='btn' href="">¡Mejora tu vida con un click! <AiOutlineArrowRight /></a>
         </div>
       </section>
 
       <section className='inv-pos'>
+
         <div className="content">
-          <h3>Te invitamos a <span className='green-text'>unirte a nuestra comunidad, a crecer, a aprender y a transformar</span> no solo tu carrera, sino también la de aquellos a tu alrededor.</h3>
+          <div className='inv-pos-container'>
+            <Image src='/images/why2.png' className='inv-pos-banner' fill={true} />
+
+            <div className='inv-pos-content'>
+              <h3>Te invitamos a <span className='green-text'>unirte a nuestra comunidad, a crecer, a aprender y a transformar</span> no solo tu carrera, sino también la de aquellos a tu alrededor.</h3>
+
+              <a className='btn' href="">¡Mejora tu vida con un click! <AiOutlineArrowRight /></a>
+            </div>
+
+          </div>
+
           <p>En <span className="font-bold">Inyob</span> atendemos a varias industrias y cubrimos miles de vacantes te presentamos una selección de búsquedas más populares:</p>
 
           <div className='proximamente'>poner vacantes aquí</div>

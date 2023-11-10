@@ -103,6 +103,32 @@ main {
   width: 100%;
 }
 
+.slide-how-works p {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.how-works-btn {
+  background-image: url('/images/hw-btn.png');
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 300px;
+  max-width: 400px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 1em auto;
+}
+
+.how-works-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .grid-how-works {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -144,4 +170,55 @@ main {
   border-radius: 1em;
   overflow: hidden;
   min-height: 300px;
+}
+
+.why-join-banner,
+.inv-pos-banner {
+  width: 80%;
+  margin: 1em auto;
+  position: static !important;
+}
+
+.inv-pos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .how-works-container {
+    flex-direction: row;
+  }
+
+  .how-works-content {
+    text-align: right;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .how-works-content p {
+    width: 60%;
+  }
+
+  .why-join-banner {
+    width: 100%;
+  }
+
+  .inv-pos-container {
+    flex-direction: row-reverse;
+  }
+
+  .inv-pos-banner {
+    width: 40%;
+    max-width: 400px;
+  }
+
+  .inv-pos-content {
+    width: 60%;
+    margin-right: 2em;
+    text-align: left;
+  }
 }
